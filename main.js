@@ -1,9 +1,9 @@
 function updateClock() {
-  const now = moment();
-  const hours = now.format("hh");
-  const minutes = now.format("mm");
-  const seconds = now.format("ss");
-  const ampm = now.format("A");
+  let now = moment();
+  let hours = now.format("hh");
+  let minutes = now.format("mm");
+  let seconds = now.format("ss");
+  let ampm = now.format("A");
   document.getElementById("hours").textContent = hours;
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
